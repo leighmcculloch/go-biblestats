@@ -1,0 +1,10 @@
+language: go
+
+go_import_path: 4d63.com/biblestats
+
+script:
+  - go test -coverprofile=coverage.txt
+  - go vet
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
