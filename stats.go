@@ -1,5 +1,11 @@
+// Package biblestats contains stats about the books of the Bible. It includes:
+//
+//   - A list of the books of the Bible.
+//   - Count of chapters in each book.
+//   - Count of verses in each chapter.
 package biblestats
 
+// Book is a book of the Bible.
 type Book string
 
 var (
