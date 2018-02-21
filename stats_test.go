@@ -10,9 +10,9 @@ func TestBooks(t *testing.T) {
 	}
 
 	if g, w := Books()[65], BookRevelation; g == w {
-		t.Logf("got %d", g)
+		t.Logf("got %#v", g)
 	} else {
-		t.Errorf("got %d, want %d", g, w)
+		t.Errorf("got %#v, want %#v", g, w)
 	}
 }
 
