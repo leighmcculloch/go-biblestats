@@ -77,6 +77,10 @@ var (
 	BookRevelation     Book = "Revelation"
 )
 
+func (b Book) Abbr() string {
+	return abbr[string(b)]
+}
+
 var books = []Book{
 	BookGenesis,
 	BookExodus,
@@ -145,6 +149,8 @@ var books = []Book{
 	BookJude,
 	BookRevelation,
 }
+
+//go:generate sh -c "go run generate/abbr_map.go > abbr_map.go"
 
 //go:generate sh -c "go run generate/verses_map.go > verses_map.go"
 
