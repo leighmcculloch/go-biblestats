@@ -150,9 +150,9 @@ var books = []Book{
 	BookRevelation,
 }
 
-//go:generate sh -c "go run generate/abbr_map.go > abbr_map.go"
+//go:generate sh -c "go run generate/abbrmap/abbr_map.go > abbr_map.go"
 
-//go:generate sh -c "go run generate/verses_map.go > verses_map.go"
+//go:generate sh -c "go run generate/versesmap/verses_map.go > verses_map.go"
 
 var chapters = func() map[Book]int {
 	m := map[Book]int{}
