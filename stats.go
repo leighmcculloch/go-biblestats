@@ -3,7 +3,7 @@
 //   - A list of the books of the Bible.
 //   - Count of chapters in each book.
 //   - Count of verses in each chapter.
-package biblestats
+package biblestats // import "4d63.com/biblestats"
 
 // Book is a book of the Bible.
 type Book string
